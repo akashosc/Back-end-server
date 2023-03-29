@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      
+      <div class="main-container">
+          <h1>TODO APP</h1>
+          <div class="add-details">
+              <form action="/" method="POST">
+                 <input type="text" placeholder="DESCRIPTION" name="task" class="descrip">
+                <div class="selection-fase">
+                  <h5>Catogary</h5>
+                 <select name="crtegory" id="">
+                  <option value="School">School</option>
+                  <option value="Work">Work</option>
+                  <option value="Enjoy">Enjoy</option>
+                  <option value="Relex">Relex</option>
+                 </select>
+                 <input type="date" id="" name="duedate">
+                </div>
+                <div class="add-btn-section">
+                  <button type="submit" class="add-taks">ADD TASK</button>
+                  <button class="deletes">DELETE TASKS</button>
+              </div>
+              </form>
+          </div>
+          <% for(let i of list) {%>
+            <div class="add-task-section">
+              <div class="task-details-check">
+                <input type="checkbox">
+                <div>
+                <h3><%=i.task%></h3>
+                 <h5><%=i.duedate%></h5>
+               </div>
+              </div>
+              <div>
+                 <div class="catagory-sec"><%=i.crtegory%></div>
+              </div>
+           </div>
+            
+         <% } %>
+         
+        
+      </div>
+
+  </body>
+</html>

@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+   display: flex;
+   margin: 2rem 12rem;
+   padding: 1rem 1rem;
+   flex-direction: column;
+   justify-content: center; 
+    align-items: center; 
+    background-color: whitesmoke;
+   
+   border: 1px solid black;
+}
+.main-container>div{
+  /* border: 1px solid black; */
+  margin: 0.5rem 0rem;
+  
+  
+}
+.add-details form{
+    
+}
+.descrip{
+   width: 100%;
+   height: 2rem;
+   border: 0px;
+   outline: none;
+   padding: 1rem 1rem;
+}
+.selection-fase{
+    display: flex;
+    margin-top: 1rem;
+    margin-left:2rem ;
+}
+.selection-fase select,input{
+    /* width: 50%; */
+    height: 2rem;
+    outline: none;
+  /* border: 1px solid; */
+  padding: 0rem 2rem;
+  
+  margin-left: 1rem;
+}
+
+
+.add-btn-section{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+}
+.add-btn-section button{
+   margin: 0rem 1rem;
+   padding: 1rem;
+
+}
+.add-taks{
+    background-color: lightslategray;
+}
+.deletes{
+    background-color: brown;
+}
+.add-task-section{
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-around;
+}
+.add-task-section div{
+    margin: 0px 2rem;
+}
+.task-details-check{
+    display: flex;  
+    flex:2;
+}
+.catagory-sec{
+    background-color: aqua;
+    padding: 1rem 1rem;
+}
