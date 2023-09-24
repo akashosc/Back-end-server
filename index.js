@@ -13,6 +13,8 @@ app.set('view engine','ejs');
 app.set('views','./views');
 
 // set up the viewengin
+// hello i am just changing for fun
+
 
 app.listen(port,function(err){
     if(err){
